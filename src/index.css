@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Bodoni Moda", "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-obsidian: #0C0B0A;
+  --color-espresso: #141210;
+  --color-stone-surface: #1B1816;
+  --color-gold: #C29F68;
+  --color-gold-light: #E0C79D;
+  --color-cream: #F8F5F0;
+  --color-parchment: #EDE8E0;
+  --color-merlot: #6B1D2F;
+  --color-sage: #7B8877;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #EDE8E0;
+    background-color: #0C0B0A;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+    touch-action: manipulation;
+  }
+
+  /* iOS Mobile Safari input focus auto-zoom prevention */
+  @media (max-width: 768px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  ::selection {
+    background-color: #C29F68;
+    color: #0C0B0A;
+  }
+}
+
+/* Custom Editorial Utilities */
+.font-editorial-serif {
+  font-family: var(--font-serif);
+}
+
+.font-editorial-display {
+  font-family: var(--font-display);
+}
+
+/* iOS & Android Mobile Scrollbar & Touch Utilities */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile Safe Area Padding Helpers */
+.pb-safe {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+
+/* Subtle Film Grain Texture Overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0C0B0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D2723;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C29F68;
+}
