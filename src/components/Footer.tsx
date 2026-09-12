@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenPrivacyPolicy?: () => void;
+  onOpenBotanicalCare?: () => void;
+  onOpenConsultation?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({
+  onOpenPrivacyPolicy,
+  onOpenBotanicalCare,
+  onOpenConsultation,
+}) => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -19,12 +29,14 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-20 border-b border-[#2D2723]/60">
           {/* Brand & Manifesto */}
           <div className="lg:col-span-2">
-            <span className="font-editorial-display text-3xl sm:text-4xl tracking-[0.15em] text-parchment uppercase block mb-1">
-              ÉPHÉMÈRE
-            </span>
-            <span className="text-[9px] tracking-[0.35em] text-gold uppercase font-light block mb-6">
-              Haute Floristerie &bull; Kuala Lumpur &bull; Penang
-            </span>
+            <a href="#home" className="group block mb-1">
+              <span className="font-editorial-display text-3xl sm:text-4xl tracking-[0.15em] text-parchment group-hover:text-gold transition-colors uppercase block">
+                ÉPHÉMÈRE
+              </span>
+              <span className="text-[9px] tracking-[0.35em] text-gold uppercase font-light block mt-1 mb-6">
+                Haute Floristerie &bull; Kuala Lumpur &bull; Penang
+              </span>
+            </a>
             <p className="text-xs text-parchment/70 font-light leading-relaxed max-w-sm mb-6">
               Flowers worth remembering. Sculptural botanical compositions cut at their exact zenith and curated without synthetic floral foam across Malaysia.
             </p>
@@ -104,10 +116,29 @@ export const Footer: React.FC = () => {
           <div>
             &copy; {new Date().getFullYear()} ÉPHÉMÈRE BOTANIQUE ATELIER MALAYSIA. ALL RIGHTS RESERVED.
           </div>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-parchment">PRIVACY POLICY</a>
-            <a href="#" className="hover:text-parchment">TERMS OF BOTANICAL CARE</a>
-            <a href="#" className="hover:text-parchment">CONCIERGE (+60 11-3071 9502)</a>
+          <div className="flex flex-wrap gap-6 items-center">
+            <button
+              type="button"
+              onClick={onOpenPrivacyPolicy}
+              className="hover:text-parchment transition-colors uppercase cursor-pointer"
+            >
+              PRIVACY POLICY
+            </button>
+            <button
+              type="button"
+              onClick={onOpenBotanicalCare}
+              className="hover:text-parchment transition-colors uppercase cursor-pointer"
+            >
+              TERMS OF BOTANICAL CARE
+            </button>
+            <a
+              href="https://wa.me/601130719502?text=Bonjour%20%C3%89ph%C3%A9m%C3%A8re%20Atelier%2C%20I%20would%20like%20to%20inquire%20about%20a%20private%20concierge%20commission."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors text-gold/90 font-medium uppercase"
+            >
+              CONCIERGE (+60 11-3071 9502)
+            </a>
           </div>
         </div>
       </div>

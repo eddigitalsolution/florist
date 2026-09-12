@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Brand Logo & Editorial Monogram */}
-          <a href="#" className="group flex flex-col text-left">
+          <a href="#home" className="group flex flex-col text-left">
             <span className="font-editorial-display text-2xl md:text-3xl tracking-[0.2em] text-parchment font-normal group-hover:text-gold transition-colors">
               ÉPHÉMÈRE
             </span>

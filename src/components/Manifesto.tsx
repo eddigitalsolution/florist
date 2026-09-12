@@ -34,7 +34,7 @@ export const Manifesto: React.FC = () => {
   ];
 
   return (
-    <section id="studio" className="relative py-28 px-6 md:px-12 bg-espresso border-t border-b border-[#2D2723]/70 overflow-hidden">
+    <section id="manifesto" className="relative py-28 px-6 md:px-12 bg-espresso border-t border-b border-[#2D2723]/70 overflow-hidden">
       {/* Background Decorative Typography */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 text-[14vw] font-editorial-serif italic text-white/1.5 pointer-events-none select-none">
         Botanique

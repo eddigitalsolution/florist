@@ -11,12 +11,16 @@ import { Gallery } from './components/Gallery';
 import { ConciergeCTA } from './components/ConciergeCTA';
 import { CartDrawer } from './components/CartDrawer';
 import { Footer } from './components/Footer';
+import { PrivacyPolicyModal } from './components/PrivacyPolicyModal';
+import { BotanicalCareModal } from './components/BotanicalCareModal';
 import { PRODUCTS } from './data/products';
 import { FlowerProduct, CartItem } from './types';
 
 export const App: React.FC = () => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
+  const [privacyPolicyOpen, setPrivacyPolicyOpen] = useState(false);
+  const [botanicalCareOpen, setBotanicalCareOpen] = useState(false);
   const currency = 'RM';
 
   // Total cart count
@@ -136,8 +140,24 @@ export const App: React.FC = () => {
         currency={currency}
       />
 
+      {/* Privacy Policy Modal */}
+      <PrivacyPolicyModal
+        isOpen={privacyPolicyOpen}
+        onClose={() => setPrivacyPolicyOpen(false)}
+      />
+
+      {/* Terms of Botanical Care Modal */}
+      <BotanicalCareModal
+        isOpen={botanicalCareOpen}
+        onClose={() => setBotanicalCareOpen(false)}
+      />
+
       {/* Architectural Typography Footer */}
-      <Footer />
+      <Footer
+        onOpenPrivacyPolicy={() => setPrivacyPolicyOpen(true)}
+        onOpenBotanicalCare={() => setBotanicalCareOpen(true)}
+        onOpenConsultation={() => scrollToSection('consultation')}
+      />
     </div>
   );
 };

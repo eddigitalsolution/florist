@@ -88,6 +88,7 @@ export const HeroBloom: React.FC<HeroBloomProps> = ({
 
   return (
     <section
+      id="home"
       ref={containerRef}
       className="relative min-h-[120vh] w-full bg-obsidian flex flex-col justify-between overflow-hidden pt-8 pb-16 px-6 md:px-12"
       aria-label="Hero - Haute Botanical Sculpture"

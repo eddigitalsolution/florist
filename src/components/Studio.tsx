@@ -13,7 +13,7 @@ export const Studio: React.FC<StudioProps> = ({ onOpenConsultation }) => {
       address: '18 Jalan Telawi, Bangsar, 59100 Kuala Lumpur, Malaysia',
       hours: 'Tuesday — Sunday &bull; 10:00 — 19:00',
       phone: '+60 3 2284 5500',
-      image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=1200&auto=format&fit=crop',
     },
     {
       city: 'Penang Studio',
@@ -21,12 +21,12 @@ export const Studio: React.FC<StudioProps> = ({ onOpenConsultation }) => {
       address: '42 Lebuh Muntri, George Town, 10200 Penang, Malaysia',
       hours: 'Wednesday — Sunday &bull; 11:00 — 19:00',
       phone: '+60 4 261 8899',
-      image: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=1200&auto=format&fit=crop',
     },
   ];
 
   return (
-    <section className="py-28 px-6 md:px-12 bg-obsidian relative" aria-label="The Atelier & Masterclasses">
+    <section id="studio" className="py-28 px-6 md:px-12 bg-obsidian relative" aria-label="The Atelier & Masterclasses">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 pb-16 border-b border-[#2D2723]/60">

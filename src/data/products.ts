@@ -95,7 +95,7 @@ export const VESSELS: VesselOption[] = [
     name: 'Fluted Murano Glass',
     material: 'Hand-blown Venetian Crystal',
     price: 140,
-    image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?q=80&w=800&auto=format&fit=crop',
     description: 'Ribbed, hand-blown smoke glass created by artisanal glassmakers in Murano.'
   },
   {
@@ -103,7 +103,7 @@ export const VESSELS: VesselOption[] = [
     name: 'Raw Roman Travertine',
     material: 'Honed Italian Limestone',
     price: 180,
-    image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=800&auto=format&fit=crop',
     description: 'Sculpted from a single block of unpolished travertine with natural mineral pitting.'
   },
   {
@@ -111,7 +111,7 @@ export const VESSELS: VesselOption[] = [
     name: 'Matte Obsidian Ceramic',
     material: 'High-fire Stoneware',
     price: 110,
-    image: 'https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=800&auto=format&fit=crop',
     description: 'Volcanic textured stoneware finished in a velvety midnight matte glaze.'
   },
   {
@@ -119,7 +119,7 @@ export const VESSELS: VesselOption[] = [
     name: 'Alabaster Salon Urn',
     material: 'Translucent Spanish Alabaster',
     price: 220,
-    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?q=80&w=600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=800&auto=format&fit=crop',
     description: 'Hand-lathed translucent stone that subtly catches and softens ambient candlelight.'
   }
 ];
@@ -187,28 +187,28 @@ export const BOTANICAL_ACCENTS: BotanicalAccentOption[] = [
     name: 'Mother of Pearl Lunaria',
     price: 35,
     texture: 'Translucent seed pods with an iridescent silvery sheen',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1535941339077-2dd1c7963098?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'accent-eucalyptus-silver',
     name: 'Silver Dollar Eucalyptus',
     price: 25,
     texture: 'Powdery blue-green architectural foliage with aromatic crispness',
-    image: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=600&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'accent-jasmine-tendrils',
     name: 'Trailing Night Jasmine Tendrils',
     price: 30,
     texture: 'Delicate twisting vines with fragrant unopened white pinwheels',
-    image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?q=80&w=800&auto=format&fit=crop'
   },
   {
     id: 'accent-bleached-ruscus',
     name: 'Sculptural Bleached Ruscus',
     price: 28,
     texture: 'Ghostly bone-white botanical foliage offering dramatic contrast',
-    image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1606041008023-472dfb5e530f?q=80&w=800&auto=format&fit=crop'
   }
 ];
 
