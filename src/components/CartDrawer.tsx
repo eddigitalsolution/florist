@@ -312,21 +312,21 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </p>
 
               {step === 'cart' ? (
-                <div className="space-y-2">
+                <div className="space-y-2.5">
                   <button
-                    onClick={() => setStep('details')}
-                    className="w-full bg-gold hover:bg-parchment text-obsidian py-3.5 text-xs tracking-[0.22em] uppercase font-bold transition-colors flex items-center justify-center gap-2 shadow-2xl active:scale-[0.98]"
+                    onClick={() => handleSendToWhatsapp()}
+                    className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-obsidian py-3.5 text-xs tracking-[0.18em] uppercase font-bold transition-all flex items-center justify-center gap-2 shadow-xl active:scale-[0.98]"
                   >
-                    <span>Proceed to Delivery Details</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <MessageCircle className="w-4 h-4 shrink-0 stroke-[2.2]" />
+                    <span className="whitespace-nowrap">Send Order via WhatsApp</span>
                   </button>
 
                   <button
-                    onClick={() => handleSendToWhatsapp()}
-                    className="w-full border border-[#25D366]/60 text-[#25D366] hover:bg-[#25D366] hover:text-obsidian py-3 text-xs tracking-[0.2em] uppercase font-medium transition-all flex items-center justify-center gap-2"
+                    onClick={() => setStep('details')}
+                    className="w-full border border-[#2D2723] hover:border-gold/60 text-parchment/80 hover:text-gold py-3 text-[11px] tracking-[0.18em] uppercase font-medium transition-colors flex items-center justify-center gap-2"
                   >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>Quick Send to WhatsApp (+6011-3071 9502)</span>
+                    <span>Add Delivery Address &amp; Card Notes</span>
+                    <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                   </button>
                 </div>
               ) : (
@@ -341,10 +341,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   <button
                     type="submit"
                     form="cart-whatsapp-form"
-                    className="w-2/3 bg-[#25D366] hover:bg-[#20bd5a] text-obsidian py-3.5 text-xs tracking-[0.2em] uppercase font-bold transition-all flex items-center justify-center gap-2 shadow-xl"
+                    className="w-2/3 bg-[#25D366] hover:bg-[#20bd5a] text-obsidian py-3.5 text-xs tracking-[0.18em] uppercase font-bold transition-all flex items-center justify-center gap-2 shadow-xl active:scale-[0.98]"
                   >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>Send Order to WhatsApp</span>
+                    <MessageCircle className="w-4 h-4 shrink-0 stroke-[2.2]" />
+                    <span className="whitespace-nowrap">Send to WhatsApp</span>
                   </button>
                 </div>
               )}
